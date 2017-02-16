@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opencloudb.parser.druid.MycatSchemaStatVisitorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-02-16T07:06:13" hostname="DESKTOP-T7UG6RU" time="0.108">
+  <properties/>
+  <testcase name="test2" classname="org.opencloudb.parser.druid.MycatSchemaStatVisitorTest" time="0.101"/>
+  <testcase name="test1" classname="org.opencloudb.parser.druid.MycatSchemaStatVisitorTest" time="0.007"/>
+  <testcase name="test3" classname="org.opencloudb.parser.druid.MycatSchemaStatVisitorTest" time="0.0"/>
+  <system-out><![CDATA[5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

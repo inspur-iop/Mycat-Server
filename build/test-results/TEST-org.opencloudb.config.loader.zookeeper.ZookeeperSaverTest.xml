@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opencloudb.config.loader.zookeeper.ZookeeperSaverTest" tests="3" skipped="3" failures="0" errors="0" timestamp="2017-02-16T07:06:12" hostname="DESKTOP-T7UG6RU" time="0.0">
+  <properties/>
+  <testcase name="testSaveRule" classname="org.opencloudb.config.loader.zookeeper.ZookeeperSaverTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSaveSchema" classname="org.opencloudb.config.loader.zookeeper.ZookeeperSaverTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSaveServer" classname="org.opencloudb.config.loader.zookeeper.ZookeeperSaverTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
