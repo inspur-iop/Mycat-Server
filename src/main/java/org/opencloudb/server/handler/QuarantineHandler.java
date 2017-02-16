@@ -23,6 +23,9 @@
  */
 package org.opencloudb.server.handler;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.opencloudb.MycatServer;
 import org.opencloudb.config.ErrorCode;
 import org.opencloudb.config.model.QuarantineConfig;
@@ -30,6 +33,7 @@ import org.opencloudb.server.ServerConnection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.alibaba.druid.support.json.JSONUtils;
 import com.alibaba.druid.wall.WallCheckResult;
 import com.alibaba.druid.wall.WallProvider;
 
@@ -56,6 +60,13 @@ public final class QuarantineHandler {
 		if(check){
 			WallCheckResult result = contextLocal.get().check(sql);
 			if (!result.getViolations().isEmpty()) {
+				
+				System.out.println("sql:"+sql);
+				System.out.println(result.getViolations().get(0).getMessage());
+//				JSONUtils.parse(text)
+//				JSONUtils.toJSONString(o)
+				
+				
 	        	logger.warn(result.getViolations().get(0).getMessage());
 	            c.writeErrMessage(ErrorCode.ERR_WRONG_USED, result.getViolations().get(0).getMessage());
 	            return false;
@@ -65,4 +76,14 @@ public final class QuarantineHandler {
 		return true;
 	}
 
+	public static void main(String[] args) {
+		Map<String, Integer> param = new HashMap<String, Integer>();
+		param.put("delete not allow", 10);
+		param.put("call not allow", 20);
+		String json = JSONUtils.toJSONString(param);
+		System.out.println(json);
+		Map obj = (Map)JSONUtils.parse(json);
+		obj.put("call not allow", 11);
+		System.out.println(obj);
+	}
 }
