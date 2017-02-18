@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.function.PartitionByHotDateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-16T07:06:17" hostname="DESKTOP-T7UG6RU" time="0.004">
+<testsuite name="org.opencloudb.route.function.PartitionByHotDateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:07" hostname="DESKTOP-T7UG6RU" time="0.005">
   <properties/>
-  <testcase name="test" classname="org.opencloudb.route.function.PartitionByHotDateTest" time="0.004"/>
+  <testcase name="test" classname="org.opencloudb.route.function.PartitionByHotDateTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[2017-02-11
-2017-02-05
-2017-01-26
-2017-02-11
-2017-02-05
-2017-01-26
+  <system-err><![CDATA[2017-02-13
+2017-02-07
+2017-01-28
+2017-02-13
+2017-02-07
+2017-01-28
 ]]></system-err>
 </testsuite>

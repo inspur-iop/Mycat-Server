@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.DruidOracleSqlParserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-02-16T07:06:13" hostname="DESKTOP-T7UG6RU" time="0.019">
+<testsuite name="org.opencloudb.route.DruidOracleSqlParserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:04" hostname="DESKTOP-T7UG6RU" time="0.023">
   <properties/>
-  <testcase name="testInsertUpdate" classname="org.opencloudb.route.DruidOracleSqlParserTest" time="0.001"/>
+  <testcase name="testOraclePageSQL" classname="org.opencloudb.route.DruidOracleSqlParserTest" time="0.002"/>
   <testcase name="testLimitToOraclePage" classname="org.opencloudb.route.DruidOracleSqlParserTest" time="0.004"/>
-  <testcase name="testOraclePageSQL" classname="org.opencloudb.route.DruidOracleSqlParserTest" time="0.001"/>
+  <testcase name="testInsertUpdate" classname="org.opencloudb.route.DruidOracleSqlParserTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

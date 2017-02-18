@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.function.PartitionByHashModTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-16T07:06:13" hostname="DESKTOP-T7UG6RU" time="3.135">
+<testsuite name="org.opencloudb.route.function.PartitionByHashModTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:04" hostname="DESKTOP-T7UG6RU" time="3.087">
   <properties/>
-  <testcase name="test" classname="org.opencloudb.route.function.PartitionByHashModTest" time="3.135"/>
-  <system-out><![CDATA[15:06:14.686   INFO [Test worker-SendThread(127.0.0.1:52324)] (ClientCnxn.java:975) -Opening socket connection to server 127.0.0.1/127.0.0.1:52324. Will not attempt to authenticate using SASL (unknown error)
-15:06:15.000   INFO [SessionTracker] (SessionTrackerImpl.java:162) -SessionTrackerImpl exited loop!
-15:06:15.688   WARN [Test worker-SendThread(127.0.0.1:52324)] (ClientCnxn.java:1102) -Session 0x15a45be021d0000 for server null, unexpected error, closing socket connection and attempting reconnect
+  <testcase name="test" classname="org.opencloudb.route.function.PartitionByHashModTest" time="3.087"/>
+  <system-out><![CDATA[17:35:05.125   INFO [Test worker-SendThread(127.0.0.1:51407)] (ClientCnxn.java:975) -Opening socket connection to server 127.0.0.1/127.0.0.1:51407. Will not attempt to authenticate using SASL (unknown error)
+17:35:06.001   INFO [SessionTracker] (SessionTrackerImpl.java:162) -SessionTrackerImpl exited loop!
+17:35:06.127   WARN [Test worker-SendThread(127.0.0.1:51407)] (ClientCnxn.java:1102) -Session 0x15a509304c40000 for server null, unexpected error, closing socket connection and attempting reconnect
 java.net.ConnectException: Connection refused: no further information
 	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
 	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
 	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
-Shard Count is 64, time elapsed: 3076
-Shard Count is 63, time elapsed: 3133
+17:35:07.710   INFO [Test worker-SendThread(127.0.0.1:51407)] (ClientCnxn.java:975) -Opening socket connection to server 127.0.0.1/127.0.0.1:51407. Will not attempt to authenticate using SASL (unknown error)
+Shard Count is 64, time elapsed: 3034
+Shard Count is 63, time elapsed: 3084
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

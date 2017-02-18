@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.mysql.MySQLMessageTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-02-16T07:06:12" hostname="DESKTOP-T7UG6RU" time="0.002">
+<testsuite name="org.opencloudb.mysql.MySQLMessageTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:03" hostname="DESKTOP-T7UG6RU" time="0.003">
   <properties/>
-  <testcase name="testReadBytesWithNull2" classname="org.opencloudb.mysql.MySQLMessageTest" time="0.002"/>
+  <testcase name="testReadBytesWithNull2" classname="org.opencloudb.mysql.MySQLMessageTest" time="0.003"/>
   <testcase name="testReadBytesWithNull3" classname="org.opencloudb.mysql.MySQLMessageTest" time="0.0"/>
   <testcase name="testReadBytesWithNull" classname="org.opencloudb.mysql.MySQLMessageTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

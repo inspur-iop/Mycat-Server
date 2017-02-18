@@ -23,8 +23,16 @@
  */
 package org.opencloudb.server.handler;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TimeZone;
 
 import org.opencloudb.MycatServer;
 import org.opencloudb.config.ErrorCode;
@@ -34,8 +42,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.druid.support.json.JSONUtils;
+import com.alibaba.druid.wall.Violation;
 import com.alibaba.druid.wall.WallCheckResult;
 import com.alibaba.druid.wall.WallProvider;
+import com.alibaba.druid.wall.violation.IllegalSQLObjectViolation;
+import com.alibaba.druid.wall.violation.SyntaxErrorViolation;
 
 /**
  * @author songwie
@@ -44,6 +55,7 @@ public final class QuarantineHandler {
 
 	private static Logger logger = LoggerFactory.getLogger(QuarantineHandler.class);
 	private static boolean check = false;
+	private static final String logPath = "/var/log/mycat/";
 	
 	private final static ThreadLocal<WallProvider> contextLocal = new ThreadLocal<WallProvider>();
 	
@@ -60,30 +72,106 @@ public final class QuarantineHandler {
 		if(check){
 			WallCheckResult result = contextLocal.get().check(sql);
 			if (!result.getViolations().isEmpty()) {
+				Violation violation = result.getViolations().get(0);
 				
-				System.out.println("sql:"+sql);
-				System.out.println(result.getViolations().get(0).getMessage());
-//				JSONUtils.parse(text)
-//				JSONUtils.toJSONString(o)
-				
-				
-	        	logger.warn(result.getViolations().get(0).getMessage());
-	            c.writeErrMessage(ErrorCode.ERR_WRONG_USED, result.getViolations().get(0).getMessage());
+				//Violation有2个实现类：SyntaxErrorViolation 和 IllegalSQLObjectViolation
+				//此处只统计和记录IllegalSQLObjectViolation类型的。
+				if(violation instanceof IllegalSQLObjectViolation){
+					
+					//更新统计信息
+					File statFile = new File(logPath + "stat.log");
+					if(!statFile.exists()){
+						try {
+							//先创建目录
+							if(! statFile.getParentFile().exists()){
+								statFile.getParentFile().mkdirs();
+							}
+							//后创建文件
+							statFile.createNewFile();
+						} catch (IOException e) {
+							logger.error("create file stat.log error.", e);
+						}
+					}
+					String fileContent = file2String(statFile);
+					Map statMap = null;
+					if(fileContent == null || fileContent.isEmpty()){
+						statMap = new HashMap();
+					}else{
+						statMap = (Map)JSONUtils.parse(fileContent);
+					}
+					if(statMap.get(violation.getMessage()) == null){
+						statMap.put(violation.getMessage(), 1);
+					}else{
+						statMap.put(violation.getMessage(), Integer.parseInt(String.valueOf(statMap.get(violation.getMessage()))) + 1);
+					}
+					String newFileContent = JSONUtils.toJSONString(statMap);
+					string2File(newFileContent, statFile, false);
+					
+					//记录日志信息 
+					File auditFile = new File(logPath + "audit.log");
+					if(!auditFile.exists()){
+						try {
+							//先创建目录
+							if(! auditFile.getParentFile().exists()){
+								auditFile.getParentFile().mkdirs();
+							}
+							//后创建文件
+							auditFile.createNewFile();
+						} catch (IOException e) {
+							logger.error("create file audit.log error.", e);
+						}
+					}
+					Map audit = new HashMap();
+					audit.put("date", getDateTimeStr());
+					audit.put("user", c.getUser());
+					audit.put("host", c.getHost());
+					audit.put("schema", c.getSchema());
+					audit.put("sql", sql);
+					audit.put("message", violation.getMessage());
+					String newAudit = JSONUtils.toJSONString(audit);
+					string2File(newAudit, auditFile, true);
+				}
+				//公共
+	            c.writeErrMessage(ErrorCode.ERR_WRONG_USED, violation.getMessage());
 	            return false;
 	        }
 		}
-		
 		return true;
 	}
-
-	public static void main(String[] args) {
-		Map<String, Integer> param = new HashMap<String, Integer>();
-		param.put("delete not allow", 10);
-		param.put("call not allow", 20);
-		String json = JSONUtils.toJSONString(param);
-		System.out.println(json);
-		Map obj = (Map)JSONUtils.parse(json);
-		obj.put("call not allow", 11);
-		System.out.println(obj);
+	public static String file2String(File file) {
+		StringBuilder result = new StringBuilder();
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String s = null;
+			while ((s = br.readLine()) != null) {
+				result.append(System.lineSeparator() + s);
+			}
+			br.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.error("read file " + file.getName() + " error.", e);
+		}
+		return result.toString();
+	}
+	public static void string2File(String str, File file,boolean isAppend) {
+		FileWriter fw = null;
+		try {
+			fw = new FileWriter(file,isAppend);
+			fw.write(str);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				fw.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	public static String getDateTimeStr() {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		sdf.setTimeZone(TimeZone.getTimeZone("GMT+8"));
+		String res = sdf.format(new Date());
+		return res;
 	}
 }

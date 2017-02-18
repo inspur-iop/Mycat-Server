@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.parser.TestEscapeProcess" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-16T07:06:12" hostname="DESKTOP-T7UG6RU" time="0.027">
+<testsuite name="org.opencloudb.parser.TestEscapeProcess" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:03" hostname="DESKTOP-T7UG6RU" time="0.031">
   <properties/>
-  <testcase name="testEscapeProcess" classname="org.opencloudb.parser.TestEscapeProcess" time="0.027"/>
-  <system-out><![CDATA[15:06:12.703   INFO [Test worker-EventThread] (ConnectionStateManager.java:228) -State change: SUSPENDED
-15:06:12.706   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
-15:06:12.710   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
-15:06:12.710   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
-15:06:12.714   INFO [Test worker] (DynaClassLoader.java:35) -dyna class load from C:/Users/hqq/git/Mycat-Server\catlet,and auto check for class file modified every 60 seconds
+  <testcase name="testEscapeProcess" classname="org.opencloudb.parser.TestEscapeProcess" time="0.031"/>
+  <system-out><![CDATA[17:35:03.587   INFO [Test worker-EventThread] (ConnectionStateManager.java:228) -State change: SUSPENDED
+17:35:03.607   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
+17:35:03.611   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
+17:35:03.611   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
+17:35:03.616   INFO [Test worker] (DynaClassLoader.java:35) -dyna class load from C:/Users/hqq/git/Mycat-Server\catlet,and auto check for class file modified every 60 seconds
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
