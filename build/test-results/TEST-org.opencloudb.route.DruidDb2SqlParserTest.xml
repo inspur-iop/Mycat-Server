@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.DruidDb2SqlParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:04" hostname="DESKTOP-T7UG6RU" time="0.075">
+<testsuite name="org.opencloudb.route.DruidDb2SqlParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:29" hostname="DESKTOP-T7UG6RU" time="0.073">
   <properties/>
   <testcase name="testDb2PageSQL" classname="org.opencloudb.route.DruidDb2SqlParserTest" time="0.058"/>
   <testcase name="testLimitToDb2Page" classname="org.opencloudb.route.DruidDb2SqlParserTest" time="0.007"/>

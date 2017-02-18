@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.mpp.TestSorter" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:03" hostname="DESKTOP-T7UG6RU" time="0.002">
+<testsuite name="org.opencloudb.mpp.TestSorter" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:28" hostname="DESKTOP-T7UG6RU" time="0.002">
   <properties/>
-  <testcase name="testDecimal" classname="org.opencloudb.mpp.TestSorter" time="0.001"/>
   <testcase name="testNumberCompare" classname="org.opencloudb.mpp.TestSorter" time="0.001"/>
+  <testcase name="testDecimal" classname="org.opencloudb.mpp.TestSorter" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

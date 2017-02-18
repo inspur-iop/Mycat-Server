@@ -105,6 +105,7 @@ public final class QuarantineHandler {
 						statMap.put(violation.getMessage(), Integer.parseInt(String.valueOf(statMap.get(violation.getMessage()))) + 1);
 					}
 					String newFileContent = JSONUtils.toJSONString(statMap);
+					newFileContent = newFileContent + System.lineSeparator();
 					string2File(newFileContent, statFile, false);
 					
 					//记录日志信息 
@@ -129,6 +130,7 @@ public final class QuarantineHandler {
 					audit.put("sql", sql);
 					audit.put("message", violation.getMessage());
 					String newAudit = JSONUtils.toJSONString(audit);
+					newAudit = newAudit + System.lineSeparator();
 					string2File(newAudit, auditFile, true);
 				}
 				//公共

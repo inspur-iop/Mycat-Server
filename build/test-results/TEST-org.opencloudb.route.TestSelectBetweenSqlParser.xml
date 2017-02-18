@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.TestSelectBetweenSqlParser" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:04" hostname="DESKTOP-T7UG6RU" time="0.01">
+<testsuite name="org.opencloudb.route.TestSelectBetweenSqlParser" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:29" hostname="DESKTOP-T7UG6RU" time="0.01">
   <properties/>
   <testcase name="testBetweenSqlRoute" classname="org.opencloudb.route.TestSelectBetweenSqlParser" time="0.01"/>
   <system-out><![CDATA[]]></system-out>

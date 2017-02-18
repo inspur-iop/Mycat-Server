@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.DDLRouteTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:04" hostname="DESKTOP-T7UG6RU" time="0.049">
+<testsuite name="org.opencloudb.route.DDLRouteTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:29" hostname="DESKTOP-T7UG6RU" time="0.048">
   <properties/>
-  <testcase name="testDDLDefaultNode" classname="org.opencloudb.route.DDLRouteTest" time="0.003"/>
-  <testcase name="testTableMetaRead" classname="org.opencloudb.route.DDLRouteTest" time="0.002"/>
-  <testcase name="testSpecialCharDDL" classname="org.opencloudb.route.DDLRouteTest" time="0.001"/>
-  <testcase name="testDDL" classname="org.opencloudb.route.DDLRouteTest" time="0.002"/>
-  <system-out><![CDATA[17:35:04.134   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
-17:35:04.134   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
-17:35:04.167   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
-17:35:04.167   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
-17:35:04.181   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
-17:35:04.181   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
+  <testcase name="testDDLDefaultNode" classname="org.opencloudb.route.DDLRouteTest" time="0.004"/>
+  <testcase name="testSpecialCharDDL" classname="org.opencloudb.route.DDLRouteTest" time="0.002"/>
+  <testcase name="testTableMetaRead" classname="org.opencloudb.route.DDLRouteTest" time="0.001"/>
+  <testcase name="testDDL" classname="org.opencloudb.route.DDLRouteTest" time="0.001"/>
+  <system-out><![CDATA[18:02:29.076   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
+18:02:29.076   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
+18:02:29.095   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
+18:02:29.096   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
+18:02:29.122   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
+18:02:29.123   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

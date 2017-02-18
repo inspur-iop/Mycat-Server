@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.DruidMysqlRouteStrategyTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:04" hostname="DESKTOP-T7UG6RU" time="0.055">
+<testsuite name="org.opencloudb.route.DruidMysqlRouteStrategyTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:29" hostname="DESKTOP-T7UG6RU" time="0.075">
   <properties/>
-  <testcase name="testTableMetaRead" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.002"/>
-  <testcase name="testRouteInsertShort" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.007"/>
-  <testcase name="testGlobalTableroute" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.005"/>
-  <testcase name="testAddLimitToSQL" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testModifySQLLimit" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.0"/>
-  <testcase name="testGroupLimit" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.002"/>
-  <testcase name="testRouteCache" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testRouteMultiTables" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testConfigSchema" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testMultiLevelOr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.004"/>
-  <testcase name="testAggregateExpr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.002"/>
-  <testcase name="testIgnoreSchema" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.0"/>
-  <testcase name="testBetweenExpr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testERRouteMutiNode" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testGlobalTableSingleNodeLimit" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.003"/>
+  <testcase name="testDuplicatePartitionKey" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.007"/>
+  <testcase name="testInsertOnDuplicateKey" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.005"/>
+  <testcase name="testMoreGlobalTableroute" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.002"/>
+  <testcase name="testIgnoreSchema" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testModifySQLLimit" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
   <testcase name="testBatchInsert" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testSelectNoTable" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.0"/>
-  <testcase name="testGlobalTableOr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.007"/>
-  <testcase name="testNonPartitionSQL" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testGlobalTableSingleNodeLimit" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.0"/>
-  <testcase name="testInsertOnDuplicateKey" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testDuplicatePartitionKey" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.006"/>
-  <testcase name="testMoreGlobalTableroute" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <testcase name="testroute" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.003"/>
+  <testcase name="testGlobalTableroute" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.007"/>
+  <testcase name="testBetweenExpr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testRouteInsertShort" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testSelectNoTable" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testGlobalTableOr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.008"/>
+  <testcase name="testConfigSchema" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testMultiLevelOr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.005"/>
+  <testcase name="testRouteMultiTables" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testAddLimitToSQL" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testRouteCache" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testNonPartitionSQL" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.002"/>
+  <testcase name="testAggregateExpr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.003"/>
+  <testcase name="testGroupLimit" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.003"/>
+  <testcase name="testERRouteMutiNode" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testTableMetaRead" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
+  <testcase name="testroute" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.004"/>
+  <testcase name="testOr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.002"/>
   <testcase name="testERroute" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.002"/>
-  <testcase name="testOr" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
   <testcase name="testAlias" classname="org.opencloudb.route.DruidMysqlRouteStrategyTest" time="0.001"/>
-  <system-out><![CDATA[17:35:04.594   WARN [Test worker] (DruidInsertParser.java:184) -bad insert sql (sharding column:OFFER_ID not provided,INSERT INTO offer_detail (gmt)
+  <system-out><![CDATA[18:02:29.556   WARN [Test worker] (DruidInsertParser.java:197) -Sharding column can't be updated: EMPLOYEE -> SHARDING_ID
+18:02:29.561   WARN [Test worker] (DruidInsertParser.java:124) -ChildTable multi insert not provided
+18:02:29.561   WARN [Test worker] (DruidInsertParser.java:274) -TODO:insert into .... select .... not supported!
+18:02:29.572   WARN [Test worker] (DruidInsertParser.java:184) -bad insert sql (sharding column:OFFER_ID not provided,INSERT INTO offer_detail (gmt)
 VALUES (now())
-17:35:04.616   WARN [Test worker] (RouterUtil.java:680) -joinKey can't have multi Value
-17:35:04.617   WARN [Test worker] (DruidInsertParser.java:124) -ChildTable multi insert not provided
-17:35:04.617   WARN [Test worker] (DruidInsertParser.java:274) -TODO:insert into .... select .... not supported!
-17:35:04.627   WARN [Test worker] (DruidInsertParser.java:197) -Sharding column can't be updated: EMPLOYEE -> SHARDING_ID
-17:35:04.637   WARN [Test worker] (DruidUpdateParser.java:202) -Parent relevant column can't be updated ORDERS->CUSTOMER_ID
+18:02:29.602   WARN [Test worker] (RouterUtil.java:680) -joinKey can't have multi Value
+18:02:29.612   WARN [Test worker] (DruidUpdateParser.java:202) -Parent relevant column can't be updated ORDERS->CUSTOMER_ID
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.function.PartitionByRangeDateHashTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T09:35:07" hostname="DESKTOP-T7UG6RU" time="2.3">
+<testsuite name="org.opencloudb.route.function.PartitionByRangeDateHashTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:32" hostname="DESKTOP-T7UG6RU" time="2.518">
   <properties/>
   <testcase name="testRange" classname="org.opencloudb.route.function.PartitionByRangeDateHashTest" time="0.001"/>
-  <testcase name="test" classname="org.opencloudb.route.function.PartitionByRangeDateHashTest" time="2.292"/>
-  <system-out><![CDATA[17:35:08.712   WARN [Test worker-SendThread(127.0.0.1:51407)] (ClientCnxn.java:1102) -Session 0x15a509304c40000 for server null, unexpected error, closing socket connection and attempting reconnect
+  <testcase name="test" classname="org.opencloudb.route.function.PartitionByRangeDateHashTest" time="2.51"/>
+  <system-out><![CDATA[18:02:33.459   WARN [Test worker-SendThread(127.0.0.1:52329)] (ClientCnxn.java:1102) -Session 0x15a50ac1ce30000 for server null, unexpected error, closing socket connection and attempting reconnect
 java.net.ConnectException: Connection refused: no further information
 	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
 	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
 	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+18:02:34.695   INFO [Test worker-SendThread(127.0.0.1:52329)] (ClientCnxn.java:975) -Opening socket connection to server 127.0.0.1/127.0.0.1:52329. Will not attempt to authenticate using SASL (unknown error)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
