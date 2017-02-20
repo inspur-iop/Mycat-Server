@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.route.HintTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:29" hostname="DESKTOP-T7UG6RU" time="0.006">
+<testsuite name="org.opencloudb.route.HintTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:36" hostname="DESKTOP-T7UG6RU" time="0.005">
   <properties/>
-  <testcase name="testHint" classname="org.opencloudb.route.HintTest" time="0.006"/>
-  <system-out><![CDATA[18:02:29.757   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
-18:02:29.757   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
+  <testcase name="testHint" classname="org.opencloudb.route.HintTest" time="0.005"/>
+  <system-out><![CDATA[18:07:36.833   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
+18:07:36.833   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

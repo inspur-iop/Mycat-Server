@@ -1,67 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.parser.druid.DruidUpdateParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:28" hostname="DESKTOP-T7UG6RU" time="0.154">
+<testsuite name="org.opencloudb.parser.druid.DruidUpdateParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:35" hostname="DESKTOP-T7UG6RU" time="0.151">
   <properties/>
-  <testcase name="testAliasUpdateShardColumn" classname="org.opencloudb.parser.druid.DruidUpdateParserTest" time="0.128"/>
+  <testcase name="testAliasUpdateShardColumn" classname="org.opencloudb.parser.druid.DruidUpdateParserTest" time="0.126"/>
   <testcase name="testUpdateShardColumn" classname="org.opencloudb.parser.druid.DruidUpdateParserTest" time="0.025"/>
-  <system-out><![CDATA[18:02:28.852   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+  <system-out><![CDATA[18:07:35.996   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.001   INFO [SessionTracker] (SessionTrackerImpl.java:162) -SessionTrackerImpl exited loop!
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
-18:02:28.870   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
-class java.sql.SQLNonTransientException
-抛异常原因为SQLNonTransientException则正确
-未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.873   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.014   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.876   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.017   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.880   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.020   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.884   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
-class java.sql.SQLNonTransientException
-抛异常原因为SQLNonTransientException则正确
-18:02:28.888   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.024   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.891   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.027   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
-18:02:28.892   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
-class java.sql.SQLNonTransientException
-抛异常原因为SQLNonTransientException则正确
-未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.895   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.030   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.898   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.033   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+class java.sql.SQLNonTransientException
+抛异常原因为SQLNonTransientException则正确
+18:07:36.035   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.900   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.038   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
-18:02:28.902   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
+18:07:36.040   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+class java.sql.SQLNonTransientException
+抛异常原因为SQLNonTransientException则正确
+未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
+18:07:36.043   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+class java.sql.SQLNonTransientException
+抛异常原因为SQLNonTransientException则正确
+18:07:36.044   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新
-18:02:28.908   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.050   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
-18:02:28.911   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.052   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
-18:02:28.912   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.054   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
-18:02:28.914   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
+18:07:36.055   WARN [Test worker] (DruidUpdateParser.java:195) -Sharding column can't be updated hotnews->ID
 class java.sql.SQLNonTransientException
 抛异常原因为SQLNonTransientException则正确
 未抛异常，解析通过，此情况分片字段可能在update语句中但是实际不会被更新

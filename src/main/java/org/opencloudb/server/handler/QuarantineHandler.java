@@ -33,20 +33,17 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
-
 import org.opencloudb.MycatServer;
 import org.opencloudb.config.ErrorCode;
 import org.opencloudb.config.model.QuarantineConfig;
 import org.opencloudb.server.ServerConnection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.alibaba.druid.support.json.JSONUtils;
 import com.alibaba.druid.wall.Violation;
 import com.alibaba.druid.wall.WallCheckResult;
 import com.alibaba.druid.wall.WallProvider;
 import com.alibaba.druid.wall.violation.IllegalSQLObjectViolation;
-import com.alibaba.druid.wall.violation.SyntaxErrorViolation;
 
 /**
  * @author songwie

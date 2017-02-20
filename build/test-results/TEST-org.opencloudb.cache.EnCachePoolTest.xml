@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.cache.EnCachePoolTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:16" hostname="DESKTOP-T7UG6RU" time="4.02">
+<testsuite name="org.opencloudb.cache.EnCachePoolTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:24" hostname="DESKTOP-T7UG6RU" time="4.02">
   <properties/>
   <testcase name="testBasic" classname="org.opencloudb.cache.EnCachePoolTest" time="4.02"/>
-  <system-out><![CDATA[18:02:16.814   INFO [Test worker] (AnnotationSizeOfFilter.java:53) -Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
-18:02:16.824   INFO [Test worker] (AgentLoader.java:87) -Located valid 'tools.jar' at 'C:\Program Files (x86)\Java\jdk1.7.0_71\jre\..\lib\tools.jar'
-18:02:16.840   INFO [Test worker] (JvmInformation.java:545) -Detected JVM data model settings of: 32-Bit HotSpot JVM
-18:02:16.893   INFO [Test worker] (AgentLoader.java:197) -Extracted agent jar to temporary file C:\Users\hqq\AppData\Local\Temp\ehcache-sizeof-agent7327723338774820439.jar
-18:02:16.894   INFO [Test worker] (AgentLoader.java:137) -Trying to load agent @ C:\Users\hqq\AppData\Local\Temp\ehcache-sizeof-agent7327723338774820439.jar
-18:02:16.899   INFO [Test worker] (DefaultSizeOfEngine.java:101) -using Agent sizeof engine
+  <system-out><![CDATA[18:07:24.291   INFO [Test worker] (AnnotationSizeOfFilter.java:53) -Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+18:07:24.300   INFO [Test worker] (AgentLoader.java:87) -Located valid 'tools.jar' at 'C:\Program Files (x86)\Java\jdk1.7.0_71\jre\..\lib\tools.jar'
+18:07:24.314   INFO [Test worker] (JvmInformation.java:545) -Detected JVM data model settings of: 32-Bit HotSpot JVM
+18:07:24.359   INFO [Test worker] (AgentLoader.java:197) -Extracted agent jar to temporary file C:\Users\hqq\AppData\Local\Temp\ehcache-sizeof-agent6566429616480824853.jar
+18:07:24.359   INFO [Test worker] (AgentLoader.java:137) -Trying to load agent @ C:\Users\hqq\AppData\Local\Temp\ehcache-sizeof-agent6566429616480824853.jar
+18:07:24.365   INFO [Test worker] (DefaultSizeOfEngine.java:101) -using Agent sizeof engine
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.parser.ManagerParserTest" tests="48" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:02:28" hostname="DESKTOP-T7UG6RU" time="0.029">
+<testsuite name="org.opencloudb.parser.ManagerParserTest" tests="48" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:35" hostname="DESKTOP-T7UG6RU" time="0.03">
   <properties/>
-  <testcase name="testShowServer" classname="org.opencloudb.parser.ManagerParserTest" time="0.004"/>
-  <testcase name="testShowParser" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testShowTimeStartUp" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowSQLSlow" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowVariables" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowThreadPool" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowVersion" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowCollation" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowHeartbeat" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testStopHeartBeat" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testSwitchPool" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testShowCommand" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testIsSelect" classname="org.opencloudb.parser.ManagerParserTest" time="0.002"/>
+  <testcase name="testIsSet" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowHelp" classname="org.opencloudb.parser.ManagerParserTest" time="0.005"/>
+  <testcase name="testSynStatus" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testComment" classname="org.opencloudb.parser.ManagerParserTest" time="0.002"/>
+  <testcase name="testReload" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testIsShow" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testStop" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testRollback" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testOnOff" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testGetWhere" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowSQL" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testSynDetail" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <testcase name="testReloadConfig" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testShowRouter" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowBackend" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowCollation" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testStopHeartBeat" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testSwitchPool" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testRollbackUser" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testShowProcessor" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testRollbackRoute" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowDataNode" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowSlowSchema" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowHeartbeat" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
   <testcase name="testReloadRoute" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowWhitComment" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowConnection" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowConnectionSQL" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowVersion" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowThreadPool" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowSQLExecute" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowParser" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testShowDataSource" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowSQLDetail" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowCommand" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowServer" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowVariables" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowSQLSlow" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
+  <testcase name="testShowTimeCurrent" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <testcase name="testReloadUser" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <testcase name="testRollbackConfig" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testShowConnection" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testShowDataNode" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowWhitComment" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testShowBackend" classname="org.opencloudb.parser.ManagerParserTest" time="0.002"/>
-  <testcase name="testShowRouter" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowTimeCurrent" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowSQLDetail" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowSQLExecute" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <testcase name="testShowDatabase" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowConnectionSQL" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowProcessor" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowDataSource" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowTimeStartUp" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <testcase name="testHeartBearDetail" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testRollbackRoute" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <testcase name="testclearSlowDataNode" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testShowSlowDataNode" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testRollbackUser" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowSlowSchema" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <testcase name="testclearSlowSchema" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testIsSelect" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testIsSet" classname="org.opencloudb.parser.ManagerParserTest" time="0.001"/>
-  <testcase name="testShowSQL" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testReload" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testOnOff" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testSynStatus" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testGetWhere" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testIsShow" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testShowHelp" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testSynDetail" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testRollback" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testComment" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
-  <testcase name="testStop" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
+  <testcase name="testShowSlowDataNode" classname="org.opencloudb.parser.ManagerParserTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
