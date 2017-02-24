@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.parser.TestEscapeProcess" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:35" hostname="DESKTOP-T7UG6RU" time="0.028">
+<testsuite name="org.opencloudb.parser.TestEscapeProcess" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-20T02:40:28" hostname="DESKTOP-T7UG6RU" time="0.059">
   <properties/>
-  <testcase name="testEscapeProcess" classname="org.opencloudb.parser.TestEscapeProcess" time="0.028"/>
-  <system-out><![CDATA[18:07:35.682   INFO [Test worker-EventThread] (ConnectionStateManager.java:228) -State change: SUSPENDED
-18:07:35.702   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
-18:07:35.705   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
-18:07:35.706   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
-18:07:35.710   INFO [Test worker] (DynaClassLoader.java:35) -dyna class load from C:/Users/hqq/git/Mycat-Server\catlet,and auto check for class file modified every 60 seconds
+  <testcase name="testEscapeProcess" classname="org.opencloudb.parser.TestEscapeProcess" time="0.059"/>
+  <system-out><![CDATA[10:40:28.977   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
+10:40:28.981   INFO [Test worker] (CacheService.java:125) -create layer cache pool TableID2DataNodeCache of type encache ,default cache size 10000 ,default expire seconds18000
+10:40:28.982   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: TESTDB_ORDERS for layered cache TableID2DataNodeCache, size 50000, expire seconds 18000
+10:40:29.007   INFO [Test worker] (DynaClassLoader.java:35) -dyna class load from C:/Users/hqq/git/Mycat-Server\catlet,and auto check for class file modified every 60 seconds
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

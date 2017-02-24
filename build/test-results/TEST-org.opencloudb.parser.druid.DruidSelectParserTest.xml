@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.parser.druid.DruidSelectParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:35" hostname="DESKTOP-T7UG6RU" time="0.163">
+<testsuite name="org.opencloudb.parser.druid.DruidSelectParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-20T02:40:29" hostname="DESKTOP-T7UG6RU" time="0.175">
   <properties/>
-  <testcase name="testGroupByWithAlias" classname="org.opencloudb.parser.druid.DruidSelectParserTest" time="0.163"/>
+  <testcase name="testGroupByWithAlias" classname="org.opencloudb.parser.druid.DruidSelectParserTest" time="0.175"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

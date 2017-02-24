@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.config.ConfigTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:28" hostname="DESKTOP-T7UG6RU" time="0.045">
+<testsuite name="org.opencloudb.config.ConfigTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-02-20T02:40:20" hostname="DESKTOP-T7UG6RU" time="0.037">
   <properties/>
-  <testcase name="testReadHostWeight" classname="org.opencloudb.config.ConfigTest" time="0.0"/>
   <testcase name="testReadUserBenchmark" classname="org.opencloudb.config.ConfigTest" time="0.0"/>
+  <testcase name="testReadHostWeight" classname="org.opencloudb.config.ConfigTest" time="0.0"/>
   <testcase name="testTempReadHostAvailable" classname="org.opencloudb.config.ConfigTest" time="0.0"/>
   <testcase name="testDynamicYYYYMMTable" classname="org.opencloudb.config.ConfigTest" time="0.0"/>
-  <system-out><![CDATA[18:07:28.437   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
-18:07:28.438   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
-18:07:28.452   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
-18:07:28.453   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
-18:07:28.467   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
-18:07:28.467   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
-18:07:28.482   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
-18:07:28.483   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
+  <system-out><![CDATA[10:40:20.648   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
+10:40:20.648   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
+10:40:20.660   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
+10:40:20.660   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
+10:40:20.670   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
+10:40:20.671   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
+10:40:20.686   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost2 is :4
+10:40:20.686   INFO [Test worker] (PhysicalDBPool.java:98) -total resouces of dataHost localhost1 is :1
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

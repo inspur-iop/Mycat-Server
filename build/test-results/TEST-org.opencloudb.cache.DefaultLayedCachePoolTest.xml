@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.cache.DefaultLayedCachePoolTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:21" hostname="DESKTOP-T7UG6RU" time="2.35">
+<testsuite name="org.opencloudb.cache.DefaultLayedCachePoolTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-20T02:40:14" hostname="DESKTOP-T7UG6RU" time="2.406">
   <properties/>
-  <testcase name="testBasic" classname="org.opencloudb.cache.DefaultLayedCachePoolTest" time="2.35"/>
-  <system-out><![CDATA[18:07:21.934   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: default for layered cache defaultLayedPool, size 1000, expire seconds 1
-18:07:22.279   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: company for layered cache defaultLayedPool, size 1000, expire seconds 1
-18:07:22.279   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: goods for layered cache defaultLayedPool, size 1000, expire seconds 1
+  <testcase name="testBasic" classname="org.opencloudb.cache.DefaultLayedCachePoolTest" time="2.406"/>
+  <system-out><![CDATA[10:40:14.023   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: default for layered cache defaultLayedPool, size 1000, expire seconds 1
+10:40:14.423   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: company for layered cache defaultLayedPool, size 1000, expire seconds 1
+10:40:14.424   INFO [Test worker] (DefaultLayedCachePool.java:80) -create child Cache: goods for layered cache defaultLayedPool, size 1000, expire seconds 1
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.opencloudb.parser.ServerParseTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2017-02-18T10:07:35" hostname="DESKTOP-T7UG6RU" time="0.006">
+<testsuite name="org.opencloudb.parser.ServerParseTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2017-02-20T02:40:28" hostname="DESKTOP-T7UG6RU" time="0.005">
   <properties/>
-  <testcase name="testCall" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testSet" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testShow" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testInsert" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testReplace" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testUpdate" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testExplain" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testKill" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testHelp" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testUpdate" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testCall" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testStart" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testKillQuery" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testInsert" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testSelect" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testDesc" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testDescribe" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testKill" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testDelete" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testBegin" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testCommit" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testSet" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testSavePoint" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testKillQuery" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testStart" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testUse" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testExplain" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testDescribe" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testShow" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testBegin" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testDelete" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <testcase name="testCommit" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testRollback" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <testcase name="testMysqlComment" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
   <testcase name="testMysqlCmdComment" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testMysqlComment" classname="org.opencloudb.parser.ServerParseTest" time="0.0"/>
+  <system-out><![CDATA[10:40:28.941   INFO [Test worker-EventThread] (ConnectionStateManager.java:228) -State change: SUSPENDED
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
