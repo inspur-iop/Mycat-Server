@@ -3,6 +3,6 @@
 /.gradle
 /.settings
 /build
-# /logs
-# /datanode/*
+/logs/*
+/datanode/*
 /.classpath
