@@ -20,6 +20,8 @@ public class User implements Propertied, Named {
     protected String name;
 
     protected List<Property> property;
+    
+    protected Privileges privileges;
 
     public String getName() {
         return name;
@@ -45,6 +47,14 @@ public class User implements Propertied, Named {
         this.getProperty().add(property);
     }
 
+    public Privileges getPrivileges(){
+        return privileges;
+    }
+    
+    public void setPrivileges(Privileges privileges){
+        this.privileges = privileges;
+    }
+    
     @Override
     public String toString() {
         return "User{" + "name='" + name + '\'' + ", property=" + property + '}';

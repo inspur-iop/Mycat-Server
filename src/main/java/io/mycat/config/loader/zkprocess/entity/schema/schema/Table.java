@@ -23,7 +23,7 @@ import io.mycat.config.loader.zkprocess.entity.Named;
 * 版权所有：Copyright 2016 zjhz, Inc. All Rights Reserved.
 */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "table")
+@XmlType(name = "table" , namespace="schema")
 public class Table implements Named {
 
     @XmlAttribute(required = true)

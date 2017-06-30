@@ -26,7 +26,7 @@ import io.mycat.config.loader.zkprocess.entity.Named;
 * 版权所有：Copyright 2016 zjhz, Inc. All Rights Reserved.
 */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "schema")
+@XmlType(name = "schema", namespace = "schema")
 public class Schema implements Named {
 
     /**
