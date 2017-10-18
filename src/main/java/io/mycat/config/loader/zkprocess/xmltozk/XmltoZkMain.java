@@ -69,10 +69,13 @@ public class XmltoZkMain {
 
 
         String clusterNodes=    ZkConfig.getInstance().getValue(ZkParamCfg.ZK_CFG_CLUSTER_NODES);
-        String clusterSize=    ZkConfig.getInstance().getValue(ZkParamCfg.ZK_CFG_CLUSTER_SIZE);
+        //通常myid.properties不配clusterSize，改为计算clusterNodes中的数量 by zhaoshan 20170628
+//        String clusterSize=    ZkConfig.getInstance().getValue(ZkParamCfg.ZK_CFG_CLUSTER_SIZE);
+        int clusterSize = clusterNodes.split(",").length;
         ClusterInfo info=new ClusterInfo();
         info.setClusterNodes(clusterNodes);
-        info.setClusterSize(Integer.parseInt(clusterSize));
+//        info.setClusterSize(Integer.parseInt(clusterSize));
+        info.setClusterSize(clusterSize);
         try {
             zkConn.setData().forPath(basePath, JSON.toJSONBytes(info));
         } catch (Exception e) {

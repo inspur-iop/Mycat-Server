@@ -133,7 +133,9 @@ public class ConfigInitializer {
 				
 				Set<String> authSchemas = uc.getSchemas();
 				if (authSchemas == null) {
-					throw new ConfigException("SelfCheck### user " + uc.getName() + "refered schemas is empty!");
+//					throw new ConfigException("SelfCheck### user " + uc.getName() + "refered schemas is empty!");
+				    //user中schemas属性为空，意味着该用户无法操作任何逻辑库，但是可以执行9066端口的管理命令，不应抛异常 by zhaoshan 20170628
+				    return;
 				}
 				
 				for (String schema : authSchemas) {

@@ -123,6 +123,8 @@ public class XmlProcessBase {
                     StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
 
             marshaller.marshal(user, out);
+            System.err.println("------------------");
+            marshaller.marshal(user,System.out);
 
         } catch (JAXBException e) {
             lOG.error("ZookeeperProcessListen parseToXml  error:Exception info:", e);
