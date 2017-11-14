@@ -81,6 +81,9 @@ public class ServerQueryHandler implements FrontendQueryHandler {
 		case ServerParse.START:
 			StartHandler.handle(sql, c, rs >>> 8);
 			break;
+		case ServerParse.DDL:
+			DDLHandler.handle(sql, c, rs >>> 8);
+			break;
 		case ServerParse.BEGIN:
 			BeginHandler.handle(sql, c);
 			break;
