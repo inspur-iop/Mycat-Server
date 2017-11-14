@@ -40,11 +40,11 @@ public final class DDLHandler {
 //						TRIGGER 
 //						VIEW 
 			
-//			break;
+			break;
 		case 'A':
 		case 'a':
 			//TODO: ALTER
-			ServerParseDDL.check(sql,c,rs);
+			ServerParseDDL.CheckAlterSQL(sql,c,rs);
 			break;
 		case 'D':
 		case 'd':
