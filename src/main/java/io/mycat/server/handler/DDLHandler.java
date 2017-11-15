@@ -44,7 +44,7 @@ public final class DDLHandler {
 		case 'A':
 		case 'a':
 			//TODO: ALTER
-			ServerParseDDL.CheckAlterSQL(sql,c,rs);
+			ServerParseDDL.checkAlterSQL(sql,c,rs);
 			break;
 		case 'D':
 		case 'd':

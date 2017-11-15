@@ -1,5 +1,6 @@
 package io.mycat.server.parser;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import io.mycat.MycatServer;
@@ -14,16 +15,19 @@ import io.mycat.util.StringUtil;
 public class ServerParseDDL {
 
 	private static int offset_total;
-	private static String tableName = null;
-	private static String columnName = null;
 
-	public static void CheckAlterSQL(String sql, ServerConnection c, int offset) {
+	public static void checkAlterSQL(String sql, ServerConnection c, int offset) {
 
+		String tableName = null;
+		String columnName = null;
 		offset_total = offset;// 其实就是0
-		boolean flgsql = ParseSQL(sql, c);
-		if (flgsql == false) {
+		Map<String,Object> map= parseSQL(sql, c);
+		if ((boolean) map.get("flag")== false) {
 			c.execute(sql, ServerParse.DDL);
 			return;
+		}else {
+			tableName=(String) map.get("tableName");
+			columnName=(String) map.get("colName");
 		}
 		String showSchema = SchemaUtil.parseShowTableSchema(sql);
 		String SchemaName = showSchema == null ? c.getSchema() : showSchema;
@@ -68,34 +72,47 @@ public class ServerParseDDL {
 	 * 
 	 * @return
 	 */
-	private static boolean ParseSQL(String sql, ServerConnection c) {
+	private static Map<String,Object> parseSQL(String sql, ServerConnection c) {
+		Map<String,Object> params= new HashMap<String,Object>();
+		String tabName = null;
+		String colName = null;
+		boolean flag_golal = false;
 		offset_total = alterCheck(sql, offset_total);
 		if (offset_total == -1) {
-			return false;
+			flag_golal=false;
 		}
 
 		offset_total = get(sql, offset_total);
 		if (offset_total == -1) {
-			return false;
+			flag_golal=false;
 		}
 		offset_total = tableCheck(sql, offset_total);
 		if (offset_total != -1) {
-			tableName = gettabName(sql, offset_total);
+			tabName = gettabName(sql, offset_total);
+			flag_golal=true;
 		} else {
-			return false;
+			flag_golal=false;
+			params.put("flag",flag_golal);
+			params.put("tableName", tabName);
+			params.put("colName", colName);
+			return params;
 		}
 		offset_total = get(sql, offset_total);
 		if (offset_total == -1) {
-			return false;
+			flag_golal=false;
 		}
 		boolean flg = columnParse(sql, offset_total);
-		if (flg == true) {
-			columnName = getcolName(sql, offset_total);
+		if (flg) {
+			colName = getcolName(sql, offset_total);
+			flag_golal=true;
 
 		} else {
-			return false;
+			flag_golal=false;
 		}
-		return true;
+		params.put("flag",flag_golal);
+		params.put("tableName", tabName);
+		params.put("colName", colName);
+		return params;
 	}
 
 	/*
