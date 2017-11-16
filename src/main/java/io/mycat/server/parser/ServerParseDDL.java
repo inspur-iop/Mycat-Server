@@ -13,22 +13,22 @@ import io.mycat.server.util.SchemaUtil;
 import io.mycat.util.StringUtil;
 
 public class ServerParseDDL {
-
-	private static int offset_total;
+	private static int offsetTotal;
 
 	public static void checkAlterSQL(String sql, ServerConnection c, int offset) {
-
 		String tableName = null;
 		String columnName = null;
-		offset_total = offset;// 其实就是0
+		offsetTotal = offset;// 其实就是0
+		
 		Map<String,Object> map= parseSQL(sql, c);
-		if ((boolean) map.get("flag")== false) {
+		if ((boolean) map.get("flag") == false) {
 			c.execute(sql, ServerParse.DDL);
 			return;
 		}else {
-			tableName=(String) map.get("tableName");
-			columnName=(String) map.get("colName");
+			tableName = (String) map.get("tableName");
+			columnName = (String) map.get("colName");
 		}
+		
 		String showSchema = SchemaUtil.parseShowTableSchema(sql);
 		String SchemaName = showSchema == null ? c.getSchema() : showSchema;
 		SchemaConfig schema = MycatServer.getInstance().getConfig().getSchemas().get(SchemaName);
@@ -73,43 +73,47 @@ public class ServerParseDDL {
 	 * @return
 	 */
 	private static Map<String,Object> parseSQL(String sql, ServerConnection c) {
-		Map<String,Object> params= new HashMap<String,Object>();
+		Map<String,Object> params = new HashMap<String,Object>();
 		String tabName = null;
 		String colName = null;
-		boolean flag_golal = false;
-		offset_total = alterCheck(sql, offset_total);
-		if (offset_total == -1) {
-			flag_golal=false;
+		boolean flag = false;
+		
+		offsetTotal = alterCheck(sql, offsetTotal);
+		if (offsetTotal == -1) {
+			flag = false;
 		}
 
-		offset_total = get(sql, offset_total);
-		if (offset_total == -1) {
-			flag_golal=false;
+		offsetTotal = get(sql, offsetTotal);
+		if (offsetTotal == -1) {
+			flag = false;
 		}
-		offset_total = tableCheck(sql, offset_total);
-		if (offset_total != -1) {
-			tabName = gettabName(sql, offset_total);
-			flag_golal=true;
+		
+		offsetTotal = tableCheck(sql, offsetTotal);
+		if (offsetTotal != -1) {
+			tabName = getTabName(sql, offsetTotal);
+			flag = true;
 		} else {
-			flag_golal=false;
-			params.put("flag",flag_golal);
+			flag = false;
+			params.put("flag", flag);
 			params.put("tableName", tabName);
 			params.put("colName", colName);
 			return params;
 		}
-		offset_total = get(sql, offset_total);
-		if (offset_total == -1) {
-			flag_golal=false;
+		
+		offsetTotal = get(sql, offsetTotal);
+		if (offsetTotal == -1) {
+			flag = false;
 		}
-		boolean flg = columnParse(sql, offset_total);
+		
+		boolean flg = columnParse(sql, offsetTotal);
 		if (flg) {
-			colName = getcolName(sql, offset_total);
-			flag_golal=true;
+			colName = getColName(sql, offsetTotal);
+			flag = true;
 
 		} else {
-			flag_golal=false;
+			flag=false;
 		}
-		params.put("flag",flag_golal);
+		params.put("flag", flag);
 		params.put("tableName", tabName);
 		params.put("colName", colName);
 		return params;
@@ -174,15 +178,14 @@ public class ServerParseDDL {
 	 * 
 	 * @return
 	 */
-	private static String gettabName(String sql, int offset) {
-		// TODO Auto-generated method stub
+	private static String getTabName(String sql, int offset) {
 		String tabName = "";
-		offset_total = get(sql, offset);
+		offsetTotal = get(sql, offset);
 
-		for (int i = offset_total; i < sql.length(); i++) {
+		for (int i = offsetTotal; i < sql.length(); i++) {
 			char ch = sql.charAt(i);
 			if (ch == ' ' || ch == '\t' || ch == '\r' || ch == '\n') {
-				offset_total = i;
+				offsetTotal = i;
 				return tabName;
 			} else {
 				tabName = tabName + ch;
@@ -203,6 +206,7 @@ public class ServerParseDDL {
 	 */
 	private static boolean columnParse(String sql, int offset) {
 		boolean rt = false;
+		
 		switch (sql.charAt(offset)) {
 		case 'A':
 		case 'a':
@@ -231,12 +235,11 @@ public class ServerParseDDL {
 	 * 
 	 * @return
 	 */
-
-	private static String getcolName(String sql, int offset) {
-		// TODO Auto-generated method stub
+	private static String getColName(String sql, int offset) {
 		String colName = "";
 		offset = get(sql, offset);
-		int temp=offset;
+		int temp = offset;
+		
 		if (sql.charAt(temp) == 'C' || sql.charAt(temp) == 'c') {
 			if (sql.length() > temp + 5) {
 				char c1 = sql.charAt(++temp);
@@ -275,7 +278,6 @@ public class ServerParseDDL {
 	 * @return
 	 */
 	private static boolean dropCheck(String sql, int offset) {
-		// TODO Auto-generated method stub
 		if (sql.length() > offset + 3) {
 			char c1 = sql.charAt(++offset);
 			char c2 = sql.charAt(++offset);
@@ -283,7 +285,7 @@ public class ServerParseDDL {
 			char c4 = sql.charAt(++offset);
 			if ((c1 == 'R' || c1 == 'r') && (c2 == 'O' || c2 == 'o') && (c3 == 'P' || c3 == 'p')
 					&& (c4 == ' ' || c4 == '\t' || c4 == '\r' || c4 == '\n')) {
-				offset_total = offset;
+				offsetTotal = offset;
 				return true;
 			}
 		}
@@ -300,7 +302,6 @@ public class ServerParseDDL {
 	 * @return
 	 */
 	private static boolean changeCheck(String sql, int offset) {
-		// TODO Auto-generated method stub
 		if (sql.length() > offset + 5) {
 			char c1 = sql.charAt(++offset);
 			char c2 = sql.charAt(++offset);
@@ -311,7 +312,7 @@ public class ServerParseDDL {
 			if ((c1 == 'H' || c1 == 'h') && (c2 == 'A' || c2 == 'a') && (c3 == 'N' || c3 == 'n')
 					&& (c4 == 'G' || c4 == 'g') && (c5 == 'E' || c5 == 'e')
 					&& (c6 == ' ' || c6 == '\t' || c6 == '\r' || c6 == '\n')) {
-				offset_total = offset;
+				offsetTotal = offset;
 				return true;
 			}
 		}
@@ -328,14 +329,13 @@ public class ServerParseDDL {
 	 * @return
 	 */
 	private static boolean addCheck(String sql, int offset) {
-		// TODO Auto-generated method stub
 		if (sql.length() > offset + 2) {
 			char c1 = sql.charAt(++offset);
 			char c2 = sql.charAt(++offset);
 			char c3 = sql.charAt(++offset);
 			if ((c1 == 'D' || c1 == 'd') && (c2 == 'D' || c2 == 'd')
 					&& (c3 == ' ' || c3 == '\t' || c3 == '\r' || c3 == '\n')) {
-				offset_total = offset;
+				offsetTotal = offset;
 				return true;
 			}
 		}
