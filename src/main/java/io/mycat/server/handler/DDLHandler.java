@@ -4,6 +4,7 @@
 package io.mycat.server.handler;
 
 import io.mycat.server.ServerConnection;
+import io.mycat.server.parser.ServerParseDDL;
 import io.mycat.util.StringUtil;
 
 /**
@@ -23,7 +24,6 @@ public final class DDLHandler {
 		if(StringUtil.isEmpty(sql)) {
 			return;
 		}
-		
 		switch (sql.charAt(0)) {
 		case 'C':
 		case 'c':
@@ -40,11 +40,12 @@ public final class DDLHandler {
 //						TRIGGER 
 //						VIEW 
 			
-//			break;
+			break;
 		case 'A':
 		case 'a':
 			//TODO: ALTER
-//			break;
+			ServerParseDDL.checkAlterSQL(sql,c,rs);
+			break;
 		case 'D':
 		case 'd':
 			//TODO: DROP
