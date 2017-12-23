@@ -25,22 +25,6 @@ public final class DDLHandler {
 			return;
 		}
 		switch (sql.charAt(0)) {
-		case 'C':
-		case 'c':
-			//TODO: CREATE 
-//						DATABASE 
-//						EVENT 
-//						FUNCTION 
-//						INDEX 
-//						LOGFILE 拦截
-//						PROCEDURE 
-//						SERVER 拦截
-//						TABLE 
-//						TABLESPACE
-//						TRIGGER 
-//						VIEW 
-			
-			break;
 		case 'A':
 		case 'a':
 			//TODO: ALTER
@@ -57,6 +41,22 @@ public final class DDLHandler {
 		case 'R':
 		case 'r':
 			//TODO: RENAME
+//			break;
+		case 'C':
+		case 'c':
+			//TODO: CREATE 
+//						DATABASE 
+//						EVENT 
+//						FUNCTION 
+//						INDEX 
+//						LOGFILE 拦截
+//						PROCEDURE 
+//						SERVER 拦截
+//						TABLE 
+//						TABLESPACE
+//						TRIGGER 
+//						VIEW 
+			
 //			break;
 		default:
 			c.execute(sql, rs & 0xff);
