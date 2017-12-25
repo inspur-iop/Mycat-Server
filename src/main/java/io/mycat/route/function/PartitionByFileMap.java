@@ -44,7 +44,7 @@ public class PartitionByFileMap extends AbstractPartitionAlgorithm implements Ru
 	/**
 	 * Map<Object, Integer> app2Partition中key值的类型：默认值为0，0表示Integer，非零表示String
 	 */
-	private int type;
+//	private int type;
 	
 	/**
 	 * 默认节点在map中的key
@@ -71,9 +71,9 @@ public class PartitionByFileMap extends AbstractPartitionAlgorithm implements Ru
 		this.mapFile = mapFile;
 	}
 	
-	public void setType(int type) {
+/*	public void setType(int type) {
 		this.type = type;
-	}
+	}*/
 
 	public void setDefaultNode(int defaultNode) {
 		this.defaultNode = defaultNode;
@@ -83,9 +83,9 @@ public class PartitionByFileMap extends AbstractPartitionAlgorithm implements Ru
 	public Integer calculate(String columnValue)  {
 		try {
 			Object value = columnValue;
-			if (type == 0) {
+/*			if (type == 0) {
 				value = Integer.valueOf(columnValue);
-			}
+			}*/
 			Integer rst = null;
 			Integer pid = app2Partition.get(value);
 			if (pid != null) {
@@ -132,11 +132,12 @@ public class PartitionByFileMap extends AbstractPartitionAlgorithm implements Ru
 				try {
 					String key = line.substring(0, ind).trim();
 					int pid = Integer.parseInt(line.substring(ind + 1).trim());
-					if(type == 0) {
-						app2Partition.put(Integer.parseInt(key), pid);
-					} else {
-						app2Partition.put(key, pid);
-					}
+//					if(type == 0) {
+//						app2Partition.put(Integer.parseInt(key), pid);
+//					} else {
+//						app2Partition.put(key, pid);
+//					}
+					app2Partition.put(key, pid);
 				} catch (Exception e) {
 				}
 			}
