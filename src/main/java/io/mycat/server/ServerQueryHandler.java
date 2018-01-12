@@ -51,8 +51,7 @@ public class ServerQueryHandler implements FrontendQueryHandler {
 
 	@Override
 	public void query(String sql) {
-		
-		ServerConnection c = this.source;
+				ServerConnection c = this.source;
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug(new StringBuilder().append(c).append(sql).toString());
 		}
@@ -82,7 +81,7 @@ public class ServerQueryHandler implements FrontendQueryHandler {
 			StartHandler.handle(sql, c, rs >>> 8);
 			break;
 		case ServerParse.DDL:
-			DDLHandler.handle(sql, c, rs >>> 8);
+			DDLHandler.handle(sql, c,rs);
 			break;
 		case ServerParse.BEGIN:
 			BeginHandler.handle(sql, c);
